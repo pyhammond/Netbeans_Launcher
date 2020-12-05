@@ -1,5 +1,5 @@
 # Netbeans_Launcher
-A shell script and Automator App that Launch Automator with my ssh-agent configuration and also connects to our company VPN
+A shell script and Automator App that Launch Apache NetBeans with my ssh-agent configuration and also connects to our company's VPN at the same time.
 
 ## Files
 There are just two files in this repo:
