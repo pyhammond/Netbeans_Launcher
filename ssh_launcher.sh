@@ -2,7 +2,10 @@
 ##############################################################################
 ##     Configurable Variables                                               ##
 ##############################################################################
-# change this first VPN_CONFIG variable to match the _exact_ name of your VPN connection to XMission
+# The path to your Java home directory - managed by this built-in script in MacOS
+JAVA_HOME=`/usr/libexec/java_home -v 1.8.0`	# this uses Java SE 8 rather than a JRE
+
+# change this first VPN_CONFIG variable to match the _exact_ name of your VPN connection
 VPN_CONFIG="VPN to XMission"
 
 # The path to your NetBeans App
@@ -41,7 +44,7 @@ else
 fi
 
 # Now, with all of those environment variables set up properly now, we can run NetBeans
-open "${NETBEANS}"
+open "${NETBEANS}" --env JAVA_HOME="${JAVA_HOME}"
 
 # Lastly, launch VPN if it's not already running
 networksetup -showpppoestatus "${VPN_CONFIG}" | grep ^connected >/dev/null || {
