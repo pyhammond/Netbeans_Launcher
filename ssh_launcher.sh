@@ -2,9 +2,6 @@
 ##############################################################################
 ##     Configurable Variables                                               ##
 ##############################################################################
-# The path to your Java home directory - managed by this built-in script in MacOS
-JAVA_HOME=`/usr/libexec/java_home -v 1.8.0`	# this uses Java SE 8 rather than a JRE
-
 # change this first VPN_CONFIG variable to match the _exact_ name of your VPN connection
 VPN_CONFIG="VPN to XMission"
 
@@ -13,6 +10,9 @@ NETBEANS="/Applications/NetBeans/Apache NetBeans 12.1.app"
 
 # The location of where we will store our temporary SSH "Environment" script
 SSH_ENV=~/.ssh/environment
+
+# The path to your Java home directory - managed by this built-in script in MacOS
+JAVA_HOME=`/usr/libexec/java_home -v 1.8.0`
 
 ##############################################################################
 ##     No more things to configure                                          ##
