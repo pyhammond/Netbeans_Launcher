@@ -6,7 +6,7 @@
 VPN_CONFIG="VPN to XMission"
 
 # The path to your NetBeans App
-NETBEANS="/Applications/NetBeans/Apache NetBeans 12.2.app"
+NETBEANS="/Applications/NetBeans/Apache NetBeans 12.3.app"
 
 # The location of where we will store our temporary SSH "Environment" script
 SSH_ENV=~/.ssh/environment
